@@ -1,0 +1,15 @@
+var PWD = process.cwd()
+export var config = require(PWD + '/lambda.json');
+export var TMP_ZIP_PATH = "/tmp/hoge.zip"
+export var ENVIRONMENT = config.environment || "development"
+export var AWS_REGION = config.region || "ap-northeast-1"
+export var AWS_ACCESS_KEY_ID = config.aws_access_key_id || null
+export var AWS_SECRET_ACCESS_KEY = config.aws_secret_access_key || null
+export var BACKET = config.backet || null
+export var FILE_KEY = config.file_key || null
+export var FUNCTION_NAME = config.function_name || null
+export var HANDLER = config.handler || "index.handler"
+export var ROLE_ARN = config.role_arn || null
+export var MEMORY_SIZE = config.memory_size || 128 
+export var TIMEOUT = config.timeout || 3
+export var TARGET = config.target || []

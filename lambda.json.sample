@@ -1,0 +1,15 @@
+{
+	"environment": "development",
+	"aws_access_key_id": "",
+	"aws_secret_access_key": "",
+	"region": "ap-northeast-1",
+	"backet": "bucket_name",
+	"file_key": "prefix/hoge.zip",
+	"function_name": "lambda_function_name",
+	"description": "hoge",
+	"handler": "index.handler",
+	"role_arn": "",
+	"memory_size": 128,
+	"timeout": 3,
+	"target": ["lib/index.js"]
+}
