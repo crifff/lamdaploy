@@ -3,7 +3,7 @@
 	"aws_access_key_id": "",
 	"aws_secret_access_key": "",
 	"region": "ap-northeast-1",
-	"backet": "bucket_name",
+	"bucket": "bucket_name",
 	"file_key": "prefix/hoge.zip",
 	"function_name": "lambda_function_name",
 	"description": "hoge",

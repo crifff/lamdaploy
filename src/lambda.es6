@@ -17,7 +17,7 @@ var init_function=function(){
 			if(err && err.code=="ResourceNotFoundException"){
 				var params = {
 					Code: { /* required */
-						S3Bucket: config.BACKET,
+						S3Bucket: config.BUCKET,
 						S3Key: config.FILE_KEY,
 					},
 					FunctionName: config.FUNCTION_NAME, /* required */
@@ -68,7 +68,7 @@ var update_code = function(){
 		var lambda = new Aws.Lambda()
 		var params = {
 			FunctionName: config.FUNCTION_NAME, /* required */
-			S3Bucket: config.BACKET,
+			S3Bucket: config.BUCKET,
 			S3Key: config.FILE_KEY,
 		};
 		lambda.updateFunctionCode(params, function(err, data) {

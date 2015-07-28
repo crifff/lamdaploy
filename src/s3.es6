@@ -14,7 +14,7 @@ var upload = function (){
 		fs.readFile(config.TMP_ZIP_PATH, (err, data)=> {
 			var S3 = new Aws.S3()
 			var params = {
-				Bucket: config.BACKET,
+				Bucket: config.BUCKET,
 				Key: config.FILE_KEY,
 				Body: data,
 			}
