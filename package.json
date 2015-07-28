@@ -1,6 +1,7 @@
 {
   "name": "lambdaploy",
-  "version": "1.0.0",
+  "version": "1.0.1",
+	"repository": "https://github.com/hoshina85/lamdaploy",
   "description": "lambda function deploy from s3",
   "main": "lib/index.js",
 	"bin": {"lambdaploy": "bin/lamdaploy"},
@@ -13,11 +14,11 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"aws-sdk": ""
-	},
-	"devDependencies": {
-		"babel": "",
+		"aws-sdk": "",
 		"lodash": "",
 		"archiver": ""
+	},
+	"devDependencies": {
+		"babel": ""
 	}
 }
