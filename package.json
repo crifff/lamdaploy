@@ -1,13 +1,13 @@
 {
   "name": "lambdaploy",
-  "version": "1.0.1",
+  "version": "1.0.2",
 	"repository": "https://github.com/hoshina85/lamdaploy",
   "description": "lambda function deploy from s3",
   "main": "lib/index.js",
 	"bin": {"lambdaploy": "bin/lamdaploy"},
 	"scripts": {
-		"build": "babel src --out-dir lib --source-maps inline",
-		"watch": "babel src --out-dir lib --watch --source-maps inline",
+		"build": "babel src --out-dir lib --stage 1 --source-maps inline",
+		"watch": "babel src --out-dir lib --stage 1 --watch --source-maps inline",
 		"docs": "jsdoc2md -t template/README.template.md lib/textlint-rule-helper.js > README.md",
 		"test": "npm run build && mocha test/*.js"
 	},
@@ -15,6 +15,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"aws-sdk": "",
+		"argv": "",
 		"lodash": "",
 		"archiver": ""
 	},

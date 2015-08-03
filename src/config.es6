@@ -1,5 +1,13 @@
+import argv from "argv"
+argv.option({ name: 'config', short: 'c', type : 'string', description :'config file', })
+
+var options = argv.run()
 var PWD = process.cwd()
-export var config = require(PWD + '/lambda.json');
+
+var config_file = options.options["config"] || "lambda.json"
+export var config = require(PWD + '/' + config_file);
+
+
 export var TMP_ZIP_PATH = "/tmp/hoge.zip"
 export var ENVIRONMENT = config.environment || "development"
 export var AWS_REGION = config.region || "ap-northeast-1"

@@ -1,5 +1,4 @@
 {
-	"environment": "development",
 	"aws_access_key_id": "",
 	"aws_secret_access_key": "",
 	"region": "ap-northeast-1",
